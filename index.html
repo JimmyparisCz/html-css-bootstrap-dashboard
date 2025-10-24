@@ -53,30 +53,47 @@
     </header>
 
     <main>
-        <div class="container">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Titolo</th>
-                        <th scope="col" class="d-none d-lg-block">Data Prestito</th>
-                        <th scope="col">Stato</th>
-                        <th scope="col">Azioni</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>I pilastri della terra.</td>
-                        <td>-</td>
-                        <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
-                        <td>
-                            <button style="border-radius: 20%;"><i class='fas fa-pencil-alt'></i></button>
-                            <button style="border-radius: 20%;"><i class='fas fa-trash'></i></button>
-                        </td>
-                    </tr>
+        <!-- Main Content -->
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-lg-9">
+                    <!-- "Add book" section -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h3>Catalogo Libri</h3>
+                        <button class="btn btn-primary">Aggiungi Libro</button>
+                    </div>
+                    <!-- Book Table -->
+                    <div class="table-responsive">
+                        <table class="table table-striped small">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Titolo</th>
+                                    <th class="d-none d-md-table-cell">Data Prestito</th>
+                                    <th>Stato</th>
+                                    <th class="text-center">Azioni</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>I pilastri della terra.</td>
+                                    <td class="d-none d-md-table-cell">-</td>
+                                    <td><span class="badge rounded-pill text-bg-success">Disponibile</span></td>
+                                    <td class="d-flex justify-content-center">
+                                        <button style="border-radius: 20%; btn-sm me-1">
+                                            <i class='fas fa-pencil-alt'></i>
+                                        </button>
+                                        <button style="border-radius: 20%; btn-sm">
+                                            <i class='fas fa-trash'></i>
+                                        </button>
+                                    </td>
+                                </tr>
 
 
-                </tbody>
-            </table>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
             integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
